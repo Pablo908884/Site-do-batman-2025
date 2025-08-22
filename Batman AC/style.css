@@ -1,0 +1,98 @@
+.logo {
+    width: 160px; /* Tamanho médio para a logo */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Centraliza a logo com um espaço abaixo */
+}
+
+/* Fundo do site */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #0f0f0f, #1a1a1a, #2c2c2c); /* degradê escuro */
+    text-align: center;
+}
+
+/* Estilo do header */
+header {
+    padding: 50px 20px;
+}
+
+/* Logo centralizada */
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    padding: 20px;
+    font-size: 14px;
+}
+/* Imagem da capa do Baman em tamanho médio */
+.capa-batman {
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 300px;     /* Tamanho médio fixo */
+    height: auto;     /* Mantém a proporção original da imagem */
+}
+/* Bloco com imagem e frases lado a lado */
+.bloco-capa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espaço entre imagem e frases */
+    margin: 40px auto;
+    flex-wrap: wrap; /* Para se adaptar em telas pequenas */
+}
+
+/* Estilo da imagem */
+Batman.do.Ar {
+    width: 300px;
+    height: auto;
+}
+
+/* Estilo das frases */
+.frases {
+    max-width: 400px;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+}
+.controle-sensibilidade {
+    text-align: center;
+    margin: 20px;
+}
+
+.botao-azul {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao-azul:hover {
+    background-color: #0056b3;
+}
+
+.esconder {
+    display: none;
+}
+
+body {
+    font-size: 16px; /* Fonte base que será aumentada ou diminuída */
+}

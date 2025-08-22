@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Fã Site: Batman Arkham</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com logo centralizada -->
+    <header>
+        <img src="logo do Batman Arkham.png" alt="Logo do Batman Arkham" class="logo">
+        <h1>Bem-vindo ao site de fã de Batman Arkham!</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section>
+            <p>Este é um site com a logo do Batman Arkham centralizada.</p>
+        </section>
+
+        <!-- Capas do jogo -->
+        <section class="capas">
+            <img src="Capa do Baman.png" alt="Capa do Baman" class="capa-batman">
+            <img src="Capa do Batman_2.0.png" alt="Capa do Batman 2.0" class="capa-batman">
+        </section>
+
+        <!-- Bloco com imagem e resumo da história -->
+        <section class="bloco-capa">
+            <img src="Batman do Ar.png" alt="Batman do Ar" class="batman-do-ar">
+            <div class="frases">
+                <p><strong>Criado em 2011</strong></p>
+                <p>
+                    <strong>Batman: Arkham City</strong> é o segundo jogo da aclamada série Arkham, desenvolvido pela Rocksteady Studios.
+                    A história se passa pouco tempo após os eventos de *Arkham Asylum*. O prefeito Quincy Sharp transforma uma parte isolada
+                    de Gotham em uma prisão gigante chamada Arkham City, onde criminosos e supervilões governam livremente.
+                </p>
+                <p>
+                    Bruce Wayne é capturado e jogado em Arkham City, onde assume sua identidade como Batman. O vilão Hugo Strange sabe sua identidade
+                    secreta e inicia o Protocolo 10, um plano mortal. Batman enfrenta inimigos como Coringa, Duas-Caras, Mulher-Gato, Charada, Sr. Frio,
+                    Ra's al Ghul e Pinguim. Coringa, doente pelo soro Titã, infecta Batman com seu sangue para forçá-lo a encontrar uma cura.
+                </p>
+                <p>
+                    A trama é repleta de reviravoltas e combates intensos, culminando em um final marcante envolvendo o destino do Coringa.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<section class="controle-sensibilidade">
+    <button id="btn-sensibilidade" class="botao-azul">Sensibilidade</button>
+    <button id="btn-aumentar" class="botao-azul esconder">+A</button>
+    <button id="btn-diminuir" class="botao-azul esconder">-A</button>
+</section>
+<script>
+    const btnSensibilidade = document.getElementById("btn-sensibilidade");
+    const btnAumentar = document.getElementById("btn-aumentar");
+    const btnDiminuir = document.getElementById("btn-diminuir");
+
+    let tamanhoFonte = 16;
+
+    btnSensibilidade.addEventListener("click", () => {
+        btnAumentar.classList.toggle("esconder");
+        btnDiminuir.classList.toggle("esconder");
+    });
+
+    btnAumentar.addEventListener("click", () => {
+        tamanhoFonte += 2;
+        document.body.style.fontSize = tamanhoFonte + "px";
+    });
+
+    btnDiminuir.addEventListener("click", () => {
+        if (tamanhoFonte > 10) {
+            tamanhoFonte -= 2;
+            document.body.style.fontSize = tamanhoFonte + "px";
+        }
+    });
